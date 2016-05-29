@@ -1,0 +1,10 @@
+/build/*
+/.texpadtmp/
+
+*.aux
+*.log
+*.dvi
+*.lof
+*.toc
+*.lot
+*.pdf

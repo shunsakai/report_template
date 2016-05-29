@@ -1,0 +1,97 @@
+% プリアンブル
+\documentclass[a4j]{jarticle}
+\usepackage{listings}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{here}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{ascmac}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{
+  \parbox{\textwidth}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}\vskip-4pt}
+}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\lstset{frame=lrb,xleftmargin=\fboxsep,xrightmargin=-\fboxsep}
+\belowcaptionskip=-10pt
+
+% タイトル
+\title{
+  \vspace{-25mm}
+  2016年度 実験\\レポート
+}
+\author{学生番号:\\氏名:}
+\date{提出日}
+
+% プログラム
+\renewcommand{\lstlistingname}{Programs}
+\lstset{
+  language={C},
+  basicstyle={\small\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\small},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0zw,
+  xleftmargin=3zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex,
+  showstringspaces=false
+}
+
+\begin{document}
+\setcounter{page}{1}
+
+\maketitle
+
+% abstract in Japanese
+\begin{abstract}
+  \include{src/abstract.tex}
+\end{abstract}
+
+\tableofcontents % 目次
+\listoffigures % 表目次
+\listoftables % 図目次
+
+% 目的
+%\input{src/1.tex}
+
+% 背景・原理
+%\input{src/2.tex}
+
+% 実験内容
+%\input{src/3.tex}
+
+% 結果
+%\input{src/4.tex}
+
+% 考察
+%\input{src/5.tex}
+
+% 感想
+%\include{src/impression.tex}
+
+% 参考文献
+%\include{src/references.tex}
+
+% 謝辞
+%\include{src/acknowledgement.tex}
+
+% 付録
+\appendix
+
+%\include{src/appendix.tex}
+
+\end{document}
